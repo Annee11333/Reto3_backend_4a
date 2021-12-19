@@ -27,7 +27,7 @@ public class UserController {
         userService.save(user);
     }
 
-    @PutMapping("/update")
+    @PutMapping("/all")
     @ResponseStatus(HttpStatus.CREATED)
     public  User update(@RequestBody User user){
         return  userService.update(user);
